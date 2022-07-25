@@ -18,4 +18,13 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1;
   font-weight: 400;
+  /* background-color: blue; */
+}
+
+.container {
+  width: 160rem;
+  margin: 0 auto;
+  background-image: url("../img/promo/promo-bg.jpeg");
+  background-size: cover;
+  background-position: center;
 }
