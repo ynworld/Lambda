@@ -20,7 +20,7 @@ body {
   font-weight: 400;
 }
 
-.section-promo {
+.bg-container {
   width: 160rem;
   margin: 0 auto;
   background-image: url("../img/promo/promo-bg.jpeg");
@@ -28,7 +28,7 @@ body {
   background-position: center;
 }
 
-.container-header {
+.header {
   height: 11rem;
   display: flex;
   align-items: center;
@@ -40,6 +40,11 @@ body {
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.01)
   );
+}
+
+.nav {
+  display: flex;
+  list-style: none;
 }
 
 .promo {
