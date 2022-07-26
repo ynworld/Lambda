@@ -20,6 +20,10 @@ body {
   font-weight: 400;
 }
 
+.margin-left-sm {
+  margin-left: 3rem;
+}
+
 .bg-container {
   width: 160rem;
   margin: 0 auto;
@@ -32,7 +36,6 @@ body {
 .header {
   height: 11rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0 17.5rem;
   background-image: linear-gradient(
@@ -44,23 +47,11 @@ body {
 
 .nav {
   display: flex;
-  height: 100%;
+  justify-content: space-around;
 }
 
-.nav-list {
-  display: flex;
-  height: 100%;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.logo {
+  align-self: center;
 }
 
 .logo-text,
@@ -75,15 +66,26 @@ body {
   font-size: 3.8rem;
 }
 
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1.6rem;
+}
+
+.nav-item {
+  display: flex;
+}
+
 .nav-link:link,
 .nav-link:visited {
   display: flex;
-  height: 100%;
   align-items: center;
   font-size: 2rem;
   text-decoration: none;
   color: #fff;
   border-top: 4px solid rgba(255, 255, 255, 0);
+  padding: 0 1.6rem;
+
   transition: all 0.5s;
 }
 
@@ -107,8 +109,8 @@ body {
 
 .social-icon {
   display: flex;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2.4rem;
+  height: 2.4rem;
   align-items: center;
   justify-content: center;
 }
@@ -136,12 +138,8 @@ body {
   width: 24rem;
 }
 
-.button,
-.button:link,
-.button:visited {
+.btn {
   width: 23rem;
-  display: inline-block;
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 600;
@@ -150,31 +148,28 @@ body {
   transition: all 0.4s;
 }
 
-.button--black:link,
-.button--black:visited {
-  margin-right: 3rem;
+.btn--black {
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid #000;
 }
 
-.button--white:link,
-.button--white:visited {
+.btn--white {
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #fff;
 }
 
-.button--white:hover {
+.btn--white:hover {
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid #000;
 }
 
-.button--black:hover {
+.btn--black:hover {
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #fff;
   color: #333;
 }
 
-.button:active {
+.btn:active {
   transform: translateY(2px);
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
 }
