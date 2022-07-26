@@ -23,6 +23,7 @@ body {
 .bg-container {
   width: 160rem;
   margin: 0 auto;
+  padding-bottom: 11rem;
   background-image: url("../img/promo/promo-bg.jpeg");
   background-size: cover;
   background-position: center;
@@ -34,7 +35,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 17.5rem;
-  margin-bottom: 11rem;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.4),
@@ -44,30 +44,44 @@ body {
 
 .nav {
   display: flex;
-  list-style: none;
+  height: 100%;
 }
 
-.promo {
-  margin: 0 auto;
-  text-align: center;
+.nav-list {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .logo-text,
-.primary-heading,
+.section-heading,
 .nav-link {
   font-family: Yeseva One, cursive;
   color: #fff;
 }
 
 .logo-text {
+  text-decoration: none;
   font-size: 3.8rem;
 }
 
 .nav-link:link,
 .nav-link:visited {
+  display: flex;
+  height: 100%;
+  align-items: center;
   font-size: 2rem;
   text-decoration: none;
-  padding: 4rem 2rem;
   color: #fff;
   border-top: 4px solid rgba(255, 255, 255, 0);
   transition: all 0.5s;
@@ -76,39 +90,55 @@ body {
 .nav-link:hover,
 .nav-link:active,
 .nav-link.nav-link--active {
-  border-top: 4px solid rgba(255, 255, 255, 1);
+  border-top: 4px solid rgba(255, 255, 255, 0.6);
 }
 
-.nav-social {
+.social-link {
+  text-decoration: none;
   color: #dab33e;
-  padding: 0 1rem;
 }
 
-.primary-heading {
-  font-family: Yeseva One, cursive;
+.nav-social-icons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-icon {
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3.2rem;
+  margin-top: 11rem;
+}
+
+.section-heading {
   font-weight: 100;
   font-size: 8.6rem;
   line-height: 1.4;
   letter-spacing: 0.25rem;
   color: #fff;
-  padding: 0 31.5rem;
-  margin-bottom: 3.2rem;
 }
 
 .divider {
-  margin-bottom: 3.2rem;
+  display: block;
+  width: 24rem;
 }
 
-.btns {
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-  padding-bottom: 14.2rem;
-}
-
-.btn,
-.btn:link,
-.btn:visited {
+.button,
+.button:link,
+.button:visited {
   width: 23rem;
   display: inline-block;
   text-decoration: none;
@@ -117,23 +147,34 @@ body {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   color: #fff;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
-.btn--black:link,
-.btn--black:visited {
+.button--black:link,
+.button--black:visited {
+  margin-right: 3rem;
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid #000;
 }
 
-.btn--white:link,
-.btn--white:visited {
+.button--white:link,
+.button--white:visited {
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #fff;
 }
 
-.btn:hover,
-.btn:active {
+.button--white:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #000;
+}
+
+.button--black:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #fff;
+  color: #333;
+}
+
+.button:active {
   transform: translateY(2px);
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
 }
