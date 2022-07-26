@@ -22,7 +22,6 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
   gap: 5rem;
   padding: 10rem 17.5rem;
 }
@@ -214,6 +213,10 @@ body {
   background-image: url("../img/bg-pattern.png");
 }
 
+.about {
+  justify-content: center;
+}
+
 .about-content {
   width: 43rem;
   display: flex;
@@ -231,25 +234,40 @@ body {
 /* SECTION INGREDIENTS */
 
 .bg-img-ingredients {
-  padding-bottom: 11rem;
   background-image: url("../img/ingredients/ingredients-bg.jpeg");
   background-size: cover;
   background-position: center;
 }
 
+.ingredients {
+  justify-content: end;
+}
+
 .ingredients-content {
-  width: 43rem;
+  flex-basis: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
-}
-
-.ingredients-text {
-  color: #fff;
+  padding: 8rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .ingredients-imgs {
   display: flex;
+  gap: 3rem;
+}
+
+.ingredient {
+  border-radius: 10rem;
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
+  border: 5px solid rgba(119, 119, 119, 0.25);
+}
+
+.ingredient-img {
+  transform: scale(1.25);
+  transform: translate(-4rem, -1rem);
 }
