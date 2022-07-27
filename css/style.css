@@ -20,6 +20,13 @@ body {
   font-weight: 400;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 10rem 17.5rem;
+}
+
 .logo-text,
 .primary-heading,
 .section-heading,
@@ -41,9 +48,21 @@ body {
   color: #cc9900;
 }
 
+.white-text {
+  color: #fff;
+}
+
 .bg-container {
   width: 160rem;
   margin: 0 auto;
+}
+
+.section-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 100;
+  margin: 1.6rem 0 3.2rem 0;
 }
 
 .bg-img-promo {
@@ -195,13 +214,6 @@ body {
   background-image: url("../img/bg-pattern.png");
 }
 
-.about {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  padding: 10rem 17.5rem;
-}
-
 .about-content {
   width: 43rem;
   display: flex;
@@ -211,15 +223,33 @@ body {
   gap: 1.6rem;
 }
 
-.about-text {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  text-align: center;
-  font-weight: 100;
-  margin: 1.6rem 0 3.2rem 0;
-}
-
 .chef-img {
   border-radius: 50%;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* SECTION INGREDIENTS */
+
+.bg-img-ingredients {
+  padding-bottom: 11rem;
+  background-image: url("../img/ingredients/ingredients-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.ingredients-content {
+  width: 43rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.ingredients-text {
+  color: #fff;
+}
+
+.ingredients-imgs {
+  display: flex;
 }
