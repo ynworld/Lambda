@@ -44,6 +44,9 @@ body {
 .bg-container {
   width: 160rem;
   margin: 0 auto;
+}
+
+.bg-img-promo {
   padding-bottom: 11rem;
   background-image: url("../img/promo/promo-bg.jpeg");
   background-size: cover;
@@ -188,10 +191,7 @@ body {
 
 /* SECTION ABOUT */
 
-.bg-container-about {
-  width: 160rem;
-  margin: 0 auto;
-  padding-bottom: 11rem;
+.bg-img-about {
   background-image: url("../img/bg-pattern.png");
 }
 
