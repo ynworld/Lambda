@@ -44,6 +44,9 @@ body {
 .bg-container {
   width: 160rem;
   margin: 0 auto;
+}
+
+.bg-img-promo {
   padding-bottom: 11rem;
   background-image: url("../img/promo/promo-bg.jpeg");
   background-size: cover;
@@ -184,4 +187,39 @@ body {
 .button:active {
   transform: translateY(2px);
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+}
+
+/* SECTION ABOUT */
+
+.bg-img-about {
+  background-image: url("../img/bg-pattern.png");
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 10rem 17.5rem;
+}
+
+.about-content {
+  width: 43rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.about-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 100;
+  margin: 1.6rem 0 3.2rem 0;
+}
+
+.chef-img {
+  border-radius: 50%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
