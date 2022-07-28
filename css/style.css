@@ -20,6 +20,10 @@ body {
   font-weight: 400;
 }
 
+.section-container {
+  padding: 10rem 17.5rem;
+}
+
 .logo-text,
 .primary-heading,
 .section-heading,
@@ -37,13 +41,25 @@ body {
   margin-left: 3rem;
 }
 
-.gold-text {
+.text-gold {
   color: #cc9900;
+}
+
+.text-white {
+  color: #fff;
 }
 
 .bg-container {
   width: 160rem;
   margin: 0 auto;
+}
+
+.section-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 100;
+  margin: 1.6rem 0 3.2rem 0;
 }
 
 .bg-img-promo {
@@ -199,7 +215,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  padding: 10rem 17.5rem;
 }
 
 .about-content {
@@ -211,15 +226,54 @@ body {
   gap: 1.6rem;
 }
 
-.about-text {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  text-align: center;
-  font-weight: 100;
-  margin: 1.6rem 0 3.2rem 0;
-}
-
-.chef-img {
+.dish-img {
   border-radius: 50%;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* SECTION INGREDIENTS */
+
+.bg-img-ingredients {
+  background-image: url("../img/ingredients/ingredients-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.ingredients {
+  display: flex;
+  justify-content: end;
+}
+
+.ingredients-content {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 8rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ingredients-images {
+  display: flex;
+  gap: 3rem;
+}
+
+.ingredient {
+  border-radius: 100%;
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
+  border: 5px solid rgba(119, 119, 119, 0.25);
+}
+
+.ingredient-wheat {
+  transform: scale(1.2) translate(-3rem, -2rem);
+}
+
+.ingredient-meatball {
+  transform: scale(1.2) translate(-2rem, -7.5rem);
+}
+.ingredient-bread {
+  transform: scale(1.2) translate(-3rem, -0.5rem);
 }
