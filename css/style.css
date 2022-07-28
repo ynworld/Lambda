@@ -21,8 +21,6 @@ body {
 }
 
 .container {
-  display: flex;
-  gap: 5rem;
   padding: 10rem 17.5rem;
 }
 
@@ -43,11 +41,11 @@ body {
   margin-left: 3rem;
 }
 
-.gold-text {
+.text-white {
   color: #cc9900;
 }
 
-.white-text {
+.text-gold {
   color: #fff;
 }
 
@@ -214,7 +212,9 @@ body {
 }
 
 .about {
+  display: flex;
   justify-content: center;
+  gap: 5rem;
 }
 
 .about-content {
@@ -226,7 +226,7 @@ body {
   gap: 1.6rem;
 }
 
-.chef-img {
+.dish-img {
   border-radius: 50%;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
 }
@@ -240,6 +240,7 @@ body {
 }
 
 .ingredients {
+  display: flex;
   justify-content: end;
 }
 
@@ -248,26 +249,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1.6rem;
   padding: 8rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.ingredients-imgs {
+.ingredients-images {
   display: flex;
   gap: 3rem;
 }
 
 .ingredient {
-  border-radius: 10rem;
+  border-radius: 100%;
   width: 12rem;
   height: 12rem;
   overflow: hidden;
   border: 5px solid rgba(119, 119, 119, 0.25);
 }
 
-.ingredient-img {
-  transform: scale(1.25);
-  transform: translate(-4rem, -1rem);
+.ingredient-image {
+  transform: scale(1.25) translate(-4rem, -1rem);
 }
