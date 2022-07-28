@@ -403,3 +403,58 @@ body {
 .reviews-name {
   font-size: 1.8rem;
 }
+
+/* SECTION RESERVATION */
+
+.section-reservation {
+  background-image: url("../img/bg-pattern.png");
+}
+
+.reservation {
+  display: flex;
+  justify-content: center;
+  gap: 16rem;
+}
+
+.reservation-images {
+  display: flex;
+  gap: 7rem;
+}
+
+.reservation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.reservation-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #cc9900;
+  margin-bottom: 1rem;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  padding: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  border: 1px solid #777;
+  background-color: #fff;
+}
