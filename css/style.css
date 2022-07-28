@@ -356,3 +356,48 @@ body {
   background-color: rgba(204, 153, 0, 0.5);
   padding: 0rem 0.5rem;
 }
+
+/* SECTION REVIEWS */
+
+.bg-img-reviews {
+  background-image: url("../img/reviews/reviews-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-content {
+  flex-basis: 61.6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 8rem 6.5rem 10rem 6.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reviews-text {
+  align-self: stretch;
+  font-size: 2.5rem;
+  line-height: 2;
+  position: relative;
+}
+
+.reviews-text::before {
+  content: "\201C";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Georgia, serif;
+  font-size: 9.6rem;
+  color: #aaa;
+  transform: translate(-100%, -30%);
+}
+
+.reviews-name {
+  font-size: 1.8rem;
+}
