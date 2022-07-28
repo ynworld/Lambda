@@ -267,13 +267,13 @@ body {
   border: 5px solid rgba(119, 119, 119, 0.25);
 }
 
-.ingredient-1 {
+.ingredient-wheat {
   transform: scale(1.2) translate(-3rem, -2rem);
 }
 
-.ingredient-2 {
+.ingredient-meatball {
   transform: scale(1.2) translate(-2rem, -7.5rem);
 }
-.ingredient-3 {
+.ingredient-bread {
   transform: scale(1.2) translate(-3rem, -0.5rem);
 }
