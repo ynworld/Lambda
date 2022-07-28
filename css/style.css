@@ -509,3 +509,11 @@ body {
   outline: none;
   border: 1px solid #cc9900;
 }
+
+.reservation-form *:hover {
+  cursor: pointer;
+}
+
+#date:focus {
+  font-size: 1.5rem;
+}
