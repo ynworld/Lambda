@@ -381,6 +381,8 @@ body {
 }
 
 .reviews-text {
+  font-family: "Gentium Book Basic", serif;
+  font-weight: 700;
   align-self: stretch;
   font-size: 2.5rem;
   line-height: 2;
