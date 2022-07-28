@@ -20,7 +20,7 @@ body {
   font-weight: 400;
 }
 
-.container {
+.section-container {
   padding: 10rem 17.5rem;
 }
 
@@ -267,6 +267,13 @@ body {
   border: 5px solid rgba(119, 119, 119, 0.25);
 }
 
-.ingredient-image {
-  transform: scale(1.25) translate(-4rem, -1rem);
+.ingredient-1 {
+  transform: scale(1.2) translate(-3rem, -2rem);
+}
+
+.ingredient-2 {
+  transform: scale(1.2) translate(-2rem, -7.5rem);
+}
+.ingredient-3 {
+  transform: scale(1.2) translate(-3rem, -0.5rem);
 }
