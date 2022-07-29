@@ -344,6 +344,8 @@ body {
 .menu-item--special::after {
   content: "Special";
   position: absolute;
+  display: flex;
+  align-items: center;
   height: 1.8rem;
   top: -1.9rem;
   right: -1px;
