@@ -146,7 +146,8 @@ body {
   color: #fff;
 }
 
-.social-icon {
+.social-icon,
+.card-icon {
   display: flex;
   width: 2.4rem;
   height: 2.4rem;
