@@ -18,6 +18,7 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1;
   font-weight: 400;
+  color: #777;
 }
 
 .section-container {
@@ -276,4 +277,82 @@ body {
 }
 .ingredient-bread {
   transform: scale(1.2) translate(-3rem, -0.5rem);
+}
+
+/* SECTION MENU */
+
+.section-menu {
+  background-image: url("../img/menu/menu-bg-pattern.png");
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 16rem;
+}
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 5rem;
+}
+
+.menu-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 5rem;
+}
+
+.menu-item {
+  padding: 0.25rem 1rem 1rem;
+}
+
+.menu-item-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(204, 153, 0, 0.5);
+
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+  font-family: Yeseva One, cursive;
+  color: #cc9900;
+  padding: 0.5rem 0 1rem;
+}
+
+.menu-item-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 1rem 0 0;
+}
+
+.menu-item--special {
+  position: relative;
+  border: 1px solid rgba(204, 153, 0, 0.5);
+}
+
+.menu-item--special::after {
+  content: "Special";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 1.8rem;
+  top: -1.9rem;
+  right: -1px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+
+  background-color: rgba(204, 153, 0, 0.5);
+  padding: 0rem 0.5rem;
 }
