@@ -490,6 +490,11 @@ body {
   transition: border 1s;
 }
 
+.reservation-form input::placeholder,
+.reservation-form select {
+  padding-left: 1rem;
+}
+
 .form-button {
   grid-column: 1/-1;
   justify-self: center;
