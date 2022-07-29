@@ -487,6 +487,7 @@ body {
   color: #777;
   border: 1px solid #aaa;
   background-color: #fff;
+  transition: border 1s;
 }
 
 .form-button {
