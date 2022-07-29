@@ -344,14 +344,13 @@ body {
 .menu-item--special::after {
   content: "Special";
   position: absolute;
-  top: 0;
+  height: 1.8rem;
+  top: -1.9rem;
   right: -1px;
-
   font-size: 1.2rem;
   text-align: center;
   color: #fff;
 
-  background-color: #cc9900;
-  padding: 0.25rem 0.5rem;
-  transform: translateY(-100%);
+  background-color: rgba(204, 153, 0, 0.5);
+  padding: 0rem 0.5rem;
 }
