@@ -512,7 +512,8 @@ body {
 }
 
 .form-button:hover {
-  background-color: rgba(204, 153, 0, 0.5);
+  background-color: rgba(204, 153, 0, 0.9);
+  border: 1px solid #be8f00;
 }
 
 .form-button:active {
@@ -528,7 +529,7 @@ body {
   font-size: 1.5rem;
 }
 
-.reservation-form input:hover,
-.reservation-form select:hover {
+.reservation-form input:hover:not(:focus),
+.reservation-form select:hover:not(:focus) {
   border: 1px solid #555;
 }
