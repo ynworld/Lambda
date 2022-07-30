@@ -412,13 +412,13 @@ body {
 
 .reservation {
   display: flex;
-  justify-content: center;
   gap: 7rem;
 }
 
 .reservation-images {
   display: flex;
-  gap: 7rem;
+  gap: 3rem;
+  padding-left: 4rem;
 }
 
 .reservation-image-box {
@@ -426,6 +426,7 @@ body {
 }
 
 .reservation-image {
+  display: block;
   transition: all 0.5s;
 }
 
@@ -438,8 +439,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 1.2rem;
   padding: 0 7rem;
+}
+
+.reservation-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
 }
 
 .reservation-text-block {
@@ -464,16 +471,10 @@ body {
   align-self: stretch;
 }
 
-.form-field {
-  display: flex;
-  flex-direction: column;
-}
-
 .form-label {
   font-size: 1.4rem;
   font-weight: 700;
   color: #cc9900;
-  margin-bottom: 1rem;
 }
 
 .reservation-form input,
@@ -487,7 +488,8 @@ body {
   color: #777;
   border: 1px solid #aaa;
   background-color: #fff;
-  transition: border 1s;
+  transition: border 0.2s;
+  margin-top: 1rem;
 }
 
 .reservation-form input::placeholder,
@@ -502,9 +504,15 @@ body {
   padding: 1rem 1rem;
   background-color: #cc9900;
   color: #fff;
+  font-size: 1.6rem;
   border: 1px solid #cc9900;
   margin-top: 2rem;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-button:hover {
+  background-color: rgba(204, 153, 0, 0.5);
 }
 
 .form-button:active {
@@ -516,10 +524,11 @@ body {
   border: 1px solid #cc9900;
 }
 
-.reservation-form *:hover {
-  cursor: pointer;
-}
-
 #date:focus {
   font-size: 1.5rem;
+}
+
+.reservation-form input:hover,
+.reservation-form select:hover {
+  border: 1px solid #555;
 }
