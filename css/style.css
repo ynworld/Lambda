@@ -396,7 +396,7 @@ body {
   left: 0;
   font-family: Georgia, serif;
   font-size: 9.6rem;
-  color: #aaa;
+  color: rgba(255, 255, 255, 0.47);
   transform: translate(-100%, -30%);
 }
 
