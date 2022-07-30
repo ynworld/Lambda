@@ -544,7 +544,8 @@ body {
 .reservation-form input:hover:not(:focus),
 .reservation-form select:hover:not(:focus) {
   border: 1px solid #555;
-  
+}
+
 /* FOOTER */
 
 .footer {
@@ -572,7 +573,7 @@ body {
 
 .footer-icons {
   display: flex;
-  gap: 1.6rem;
+  gap: 0.5rem;
   font-size: 1.6rem;
   flex: 1 0 auto;
   align-items: end;
