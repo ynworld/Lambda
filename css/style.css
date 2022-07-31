@@ -417,7 +417,6 @@ body {
 
 .reservation-images {
   display: flex;
-  align-self: center;
   gap: 3rem;
   padding-left: 4rem;
 }
@@ -428,6 +427,7 @@ body {
 
 .reservation-image {
   display: block;
+  height: 100%;
   transition: all 0.5s;
 }
 
