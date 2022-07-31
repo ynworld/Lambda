@@ -417,6 +417,7 @@ body {
 
 .reservation-images {
   display: flex;
+  align-self: center;
   gap: 3rem;
   padding-left: 4rem;
 }
