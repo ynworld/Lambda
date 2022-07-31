@@ -133,6 +133,7 @@ body {
 .social-link:visited {
   text-decoration: none;
   color: #dab33e;
+  transition: all 0.3s;
 }
 
 .social-link:hover,
@@ -402,4 +403,135 @@ body {
 
 .reviews-name {
   font-size: 1.8rem;
+}
+
+/* SECTION RESERVATION */
+
+.section-reservation {
+  background-image: url("../img/bg-pattern.png");
+}
+
+.reservation {
+  display: flex;
+  gap: 7rem;
+}
+
+.reservation-images {
+  display: flex;
+  gap: 3rem;
+  padding-left: 4rem;
+}
+
+.reservation-image-box {
+  overflow: hidden;
+}
+
+.reservation-image {
+  display: block;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.reservation-image:hover {
+  transform: scale(1.02);
+}
+
+.reservation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+}
+
+.reservation-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.reservation-text-block {
+  padding: 2rem 0;
+}
+
+.reservation-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 100;
+}
+
+.reservation-text:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.reservation-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.form-label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #cc9900;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  color: #777;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  transition: border 0.2s;
+  margin-top: 1rem;
+}
+
+.reservation-form input::placeholder,
+.reservation-form select {
+  padding-left: 1rem;
+}
+
+.form-button {
+  grid-column: 1/-1;
+  justify-self: center;
+  width: 20rem;
+  padding: 1rem 1rem;
+  background-color: #cc9900;
+  color: #fff;
+  font-size: 1.6rem;
+  border: 1px solid #cc9900;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-button:hover {
+  background-color: rgba(204, 153, 0, 0.9);
+  border: 1px solid #be8f00;
+}
+
+.form-button:active {
+  transform: translateY(1px);
+}
+
+.reservation-form *:focus {
+  outline: none;
+  border: 1px solid #cc9900;
+}
+
+#date:focus {
+  font-size: 1.5rem;
+}
+
+.reservation-form input:hover:not(:focus),
+.reservation-form select:hover:not(:focus) {
+  border: 1px solid #555;
 }
