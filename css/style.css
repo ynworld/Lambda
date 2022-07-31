@@ -133,6 +133,7 @@ body {
 .social-link:visited {
   text-decoration: none;
   color: #dab33e;
+  transition: all 0.3s;
 }
 
 .social-link:hover,
