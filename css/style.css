@@ -28,7 +28,8 @@ body {
 .logo-text,
 .primary-heading,
 .section-heading,
-.nav-link {
+.nav-link,
+.sub-heading {
   font-family: Yeseva One, cursive;
   font-weight: 100;
   color: #fff;
@@ -36,6 +37,10 @@ body {
 
 .section-heading {
   font-size: 3.2rem;
+}
+
+.sub-heading {
+  font-size: 2.1rem;
 }
 
 .margin-left-sm {
@@ -141,7 +146,8 @@ body {
   color: #fff;
 }
 
-.social-icon {
+.social-icon,
+.card-icon {
   display: flex;
   width: 2.4rem;
   height: 2.4rem;
@@ -168,6 +174,10 @@ body {
 
 .divider {
   width: 24rem;
+}
+
+.divider-small {
+  width: 20rem;
 }
 
 .button {
@@ -534,4 +544,55 @@ body {
 .reservation-form input:hover:not(:focus),
 .reservation-form select:hover:not(:focus) {
   border: 1px solid #555;
+}
+
+/* FOOTER */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #000;
+  padding: 5rem 17.5rem;
+  gap: 6rem;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.footer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.footer-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.footer-social-link:link,
+.footer-social-link:visited {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.footer-social-link:hover,
+.footer-social-link:active {
+  color: #cc9900;
 }
