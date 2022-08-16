@@ -56,7 +56,7 @@ body {
 }
 
 .bg-container {
-  width: 160rem;
+  max-width: 160rem;
   margin: 0 auto;
 }
 
@@ -69,23 +69,33 @@ body {
 }
 
 .bg-img-promo {
-  padding-bottom: 11rem;
   background-image: url("../img/promo/promo-bg.jpeg");
-  background-size: cover;
-  background-position: center;
+  background-size: auto;
+  background-position: top 0 left 0;
+  /* background-clip: content-box; */
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160rem;
   height: 11rem;
   display: flex;
+
   justify-content: space-between;
   gap: 1.6rem;
   padding: 0 17.5rem;
   background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.01)
-  );
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.02)
+    ),
+    url("../img/promo/promo-bg.jpeg");
+  background-size: auto;
+  background-position: top 0 left 0;
+  z-index: 99;
 }
 
 .logo {
@@ -155,16 +165,6 @@ body {
   justify-content: center;
 }
 
-.promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 3.2rem;
-  margin-top: 11rem;
-}
-
 .primary-heading {
   width: 70%;
   font-size: 8.6rem;
@@ -215,6 +215,18 @@ body {
 .button:active {
   transform: translateY(2px);
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+}
+
+/* SECTION PROMO */
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3.2rem;
+  padding: 11rem 0;
 }
 
 /* SECTION ABOUT */
@@ -297,9 +309,11 @@ body {
 }
 
 .menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
   justify-content: center;
   gap: 16rem;
+
 }
 
 .menu-column {
@@ -595,4 +609,157 @@ body {
 .footer-social-link:hover,
 .footer-social-link:active {
   color: #cc9900;
+}
+
+/* MEDIA QUERIES */
+/* MAX WIDTH 1600px (100em) */
+/* Makes fixed header width responsive and equal rest of content */
+@media only screen and (max-width: 100em) {
+  .header {
+    width: 100vw;
+  }
+}
+
+/* MAX WIDTH 1500px (93.75em) */
+@media only screen and (max-width: 93.75em) {
+  .section-heading {
+    font-size: 2.8rem;
+  }
+  .sub-heading {
+    font-size: 2rem;
+  }
+  .reviews-text {
+    font-size: 2.1rem;
+  }
+
+/* MAX WIDTH 1450px (90.625em) */
+@media only screen and (max-width: 90.625em) {
+
+/* Set default FONT SIZE to 9rem */
+  html {
+    font-size: 56.25%;
+  }
+  .header {
+    padding: 0 15rem;
+  }
+  .section-container {
+    padding: 8rem 15rem;
+  }
+  .reviews-text {
+    font-size: 2rem;
+  }
+  .reservation-text {
+    font-size: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 2.7rem;
+  }
+  .sub-heading {
+    font-size: 1.9rem;
+  }
+}
+
+/* MAX WIDTH 1300px (81.25em) */
+@media only screen and (max-width: 81.25em) {
+
+/* Set default FONT SIZE to 8rem */
+  html {
+    font-size: 50%;
+  }
+  .header {
+    padding: 0 10rem;
+  }
+  .section-container {
+    padding: 6rem 10rem;
+  }
+  .reservation-text {
+    font-size: 1.4rem;
+  }
+
+  .section-heading {
+    font-size: 2.6rem;
+  }
+  .sub-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* MAX WIDTH 1150px (71.875em) */
+@media only screen and (max-width: 71.875em) {
+  .primary-heading {
+    font-size: 7rem;
+  }
+.menu-item-title {
+  font-size: 1.9rem;
+}
+.menu-item-text {
+  font-size: 1.5rem;
+}
+.about-content {
+  width: 60vw;
+}
+.about-img {
+  display: none;
+}
+.ingredients {
+  justify-content: center;
+}
+.ingredients-content {
+  flex-basis: 70%;
+}
+.reviews-content {
+  flex-basis: 80%;
+}
+.reservation-images {
+  display: none;
+}
+.footer {
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+}
+
+/* MAX WIDTH 1000px (62.5em) */
+@media only screen and (max-width: 62.6em) {
+  .header {
+    padding: 0 5rem;
+  }
+  .nav-social-icons {
+    display: none;
+  }
+  .primary-heading {
+    font-size: 5rem;
+  }
+  .menu {
+grid-template-columns: 1fr;
+grid-gap: 5rem;
+  }
+  .menu-item-title {
+    font-size: 2.1rem;
+  }
+  .menu-item-text {
+    font-size: 1.6rem;
+  }
+  .reservation-image-box--2 {
+    display: none;
+  }
+}
+
+/* MAX WIDTH 850px (53.125em) */
+@media only screen and (max-width: 53.125em) {
+.header {
+  flex-direction: column-reverse;
+  justify-content: start;
+  align-items: center;
+  height: 9rem;
+  padding: 0 1rem;
+}
+.primary-heading {
+  font-size: 4.5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 1.8rem;
+}
 }
