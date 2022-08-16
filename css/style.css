@@ -56,7 +56,7 @@ body {
 }
 
 .bg-container {
-  width: 160rem;
+  max-width: 160rem;
   margin: 0 auto;
 }
 
@@ -69,27 +69,32 @@ body {
 }
 
 .bg-img-promo {
-  /* padding-bottom: 20 0 11rem 0; */
   background-image: url("../img/promo/promo-bg.jpeg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .header {
-  height: 11rem;
-  display: flex;
   position: fixed;
   top: 0;
   left: 50%;
+  transform: translateX(-50%);
+  width: 160rem;
+  height: 11rem;
+  display: flex;
+
   justify-content: space-between;
   gap: 1.6rem;
   padding: 0 17.5rem;
-  margin-left: -80rem;
   background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.02)
-  );
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.02)
+    ),
+    url("../img/promo/promo-bg.jpeg");
+  background-size: cover;
+  background-position: top;
+  z-index: 99;
 }
 
 .logo {
@@ -601,4 +606,80 @@ body {
 .footer-social-link:hover,
 .footer-social-link:active {
   color: #cc9900;
+}
+
+/* MEDIA QUERIES */
+/* MAX WIDTH 1600px (100em) */
+/* Makes fixed header width responsive and equal rest of content */
+@media only screen and (max-width: 100em) {
+  .header {
+    width: 100vw;
+  }
+}
+
+/* MAX WIDTH 1500px (93.75em) */
+@media only screen and (max-width: 93.75em) {
+  .section-heading {
+    font-size: 2.8rem;
+  }
+  .sub-heading {
+    font-size: 2rem;
+  }
+  .reviews-text {
+    font-size: 2.1rem;
+  }
+
+/* MAX WIDTH 1450px (90.625em) */
+@media only screen and (max-width: 90.625em) {
+
+/* Set default FONT SIZE to 9rem */
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0 15rem;
+  }
+  .section-container {
+    padding: 8rem 15rem;
+  }
+  .reviews-text {
+    font-size: 2rem;
+  }
+  .reservation-text {
+    font-size: 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 2.7rem;
+  }
+  .sub-heading {
+    font-size: 1.9rem;
+  }
+}
+
+/* MAX WIDTH 1300px (81.25em) */
+@media only screen and (max-width: 81.25em) {
+
+/* Set default FONT SIZE to 8rem */
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 0 10rem;
+  }
+  .section-container {
+    padding: 6rem 10rem;
+  }
+  .reservation-text {
+    font-size: 1.4rem;
+  }
+
+  .section-heading {
+    font-size: 2.6rem;
+  }
+  .sub-heading {
+    font-size: 1.8rem;
+  }
 }
